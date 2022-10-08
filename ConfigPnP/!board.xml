@@ -1,0 +1,43 @@
+<openpnp-board version="1.1" name="!board.xml">
+   <dimensions units="Millimeters" x="37.0" y="0.0" z="0.0" rotation="0.0"/>
+   <fiducials/>
+   <placements>
+      <placement version="1.2" id="FID1" side="Top" part-id="FIDUCIAL-1X2-FIDUCIAL1X2" type="Fiducial" check-fids="false">
+         <location units="Millimeters" x="2.0" y="2.0" z="0.0" rotation="0.0"/>
+      </placement>
+      <placement version="1.2" id="FID2" side="Top" part-id="FIDUCIAL-1X2-FIDUCIAL1X2" type="Fiducial" check-fids="false">
+         <location units="Millimeters" x="34.5" y="26.5" z="0.0" rotation="0.0"/>
+      </placement>
+      <placement version="1.2" id="FID3" side="Top" part-id="FIDUCIAL-1X2-FIDUCIAL1X2" type="Fiducial" check-fids="false">
+         <location units="Millimeters" x="34.5" y="2.0" z="0.0" rotation="0.0"/>
+      </placement>
+      <placement version="1.2" id="R1" side="Top" part-id="R0402-1K" type="Place" check-fids="false">
+         <location units="Millimeters" x="31.0" y="17.0" z="0.0" rotation="30.0"/>
+      </placement>
+      <placement version="1.2" id="R2" side="Top" part-id="R0402-1K" type="Place" check-fids="false">
+         <location units="Millimeters" x="31.0" y="22.0" z="0.0" rotation="30.0"/>
+      </placement>
+      <placement version="1.2" id="R3" side="Top" part-id="R0603-1K" type="Place" check-fids="false">
+         <location units="Millimeters" x="6.0" y="11.0" z="0.0" rotation="45.0"/>
+      </placement>
+      <placement version="1.2" id="R4" side="Top" part-id="R0603-1K" type="Place" check-fids="false">
+         <location units="Millimeters" x="6.0" y="6.0" z="0.0" rotation="45.0"/>
+      </placement>
+      <placement version="1.2" id="R5" side="Top" part-id="R0805-1K" type="Place" check-fids="false">
+         <location units="Millimeters" x="31.0" y="6.0" z="0.0" rotation="60.0"/>
+      </placement>
+      <placement version="1.2" id="R6" side="Top" part-id="R0805-1K" type="Place" check-fids="false">
+         <location units="Millimeters" x="31.0" y="11.0" z="0.0" rotation="60.0"/>
+      </placement>
+   </placements>
+   <solder-paste-pads>
+      <board-pad type="Paste" side="Top" name="R1-1">
+         <location units="Millimeters" x="30.05" y="6.0" z="0.0" rotation="0.0"/>
+         <pad class="org.openpnp.model.Pad$RoundRectangle" units="Millimeters" width="1.5" height="1.3" roundness="0.0"/>
+      </board-pad>
+      <board-pad type="Paste" side="Top" name="R1-2">
+         <location units="Millimeters" x="31.95" y="6.0" z="0.0" rotation="0.0"/>
+         <pad class="org.openpnp.model.Pad$RoundRectangle" units="Millimeters" width="1.5" height="1.3" roundness="0.0"/>
+      </board-pad>
+   </solder-paste-pads>
+</openpnp-board>

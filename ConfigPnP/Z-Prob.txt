@@ -1,0 +1,22 @@
+<command head-mountable-id="N1" type="PICK_COMMAND">
+            <text><![CDATA[G38.2 Z-20    ; Probe down for picked part]]></text>
+            <text><![CDATA[M105          ; Report the vacuum - for log only]]></text>
+            <text><![CDATA[M10           ; Open solenoid valve]]></text>
+            <text><![CDATA[G4 P200       ; wait for nozzle to build up vacuum]]></text>
+            <text><![CDATA[M105          ; Report the vacuum - for log only]]></text>
+            <text><![CDATA[G91           ; Switch to relative mode]]></text>
+            <text><![CDATA[G1 Z8         ; Move back up 8mm to clear the spring loaded nozzle tip]]></text>
+            <text><![CDATA[G90           ; Switch back to absolute mode - OpenPNP will restore a known Z height with the upcoming Safe Z move]]></text>
+            <text><![CDATA[G4 P200       ; wait for the vacuum level to establish - it will be measured next]]></text>
+         </command>
+         <command head-mountable-id="N1" type="PLACE_COMMAND">
+            <text><![CDATA[G38.2 Z-40    ; Probe down for placing/discarding part]]></text>
+            <text><![CDATA[M105          ; Report the vacuum - for log only]]></text>
+            <text><![CDATA[M11           ; Close solenoid valve]]></text>
+            <text><![CDATA[G4 P200       ; wait for nozzle to lose vacuum]]></text>
+            <text><![CDATA[M105          ; Report the vacuum - for log only]]></text>
+            <text><![CDATA[G91           ; Switch to relative mode]]></text>
+            <text><![CDATA[G1 Z8         ; Move back up 8mm to clear the spring loaded nozzle tip.]]></text>
+            <text><![CDATA[G90           ; Switch back to absolute mode]]></text>
+            <text><![CDATA[G4 P200       ; wait for the vacuum level to establish - it will be measured next]]></text>
+         </command>
